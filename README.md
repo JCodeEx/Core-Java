@@ -1,2 +1,2 @@
-# Java8
+# Java
 Core java coding program
