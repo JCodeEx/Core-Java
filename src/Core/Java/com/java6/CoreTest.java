@@ -1,5 +1,7 @@
 package Core.Java.com.java6;
 
+import Core.Java.com.java8.CharacterCounts;
+
 public class CoreTest {
     public static void main(String[] args) {
         System.out.println("Core Test");
@@ -13,6 +15,7 @@ public class CoreTest {
         String input = "  Hello   world! This is a   test string.  ";
         numberOfWords.numberOfWordsInAString(input);
         numberOfWords.java8Used();
+
 
     }
 }
