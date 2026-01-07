@@ -16,26 +16,26 @@ public class CharacterCounts {
                  */
 
     public static void characterCountsWithMergeFunction(String str) {
-        Map<Character,Long> countMap=new HashMap<>();
-                str.chars()
-                        .mapToObj(c ->(char)c)
-                        .filter(c ->c !=' ')
-                        .forEach(c -> countMap.merge(c,1L, Long::sum));
+        Map<Character, Long> countMap = new HashMap<>();
+        str.chars()
+                .mapToObj(c -> (char) c)
+                .filter(c -> c != ' ')
+                .forEach(c -> countMap.merge(c, 1L, Long::sum));
         System.out.println(countMap);
-        }
-        
-        public static void charCountUsingGroupingBy(String str){
-                Map<Character,Long> charCount=
-                 str.chars().mapToObj(c ->(char)c)
-                .filter(c -> c !=' ')
-                .collect(Collectors.groupingBy(c ->c ,Collectors.counting()));
+    }
 
-            charCount.forEach((k, v) ->
-                    System.out.println(k + " -> " + v)
-            );
-                
-            }
-        }
+    public static void charCountUsingGroupingBy(String str) {
+        Map<Character, Long> charCount =
+                str.chars().mapToObj(c -> (char) c)
+                        .filter(c -> c != ' ')
+                        .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+
+        charCount.forEach((k, v) ->
+                System.out.println(k + " -> " + v)
+        );
+
+    }
+}
 
 
 

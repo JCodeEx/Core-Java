@@ -26,11 +26,12 @@ END
                 .count();
         System.out.println("Number of words using Java 8: " + wordCount);
     }
-    public static void wordCountUsingMerge(){
-        List<String>inputData=Arrays.asList("hi","hi","Hi","hello");
-        Map<String,Integer> mapCount=new HashMap<>();
-        for (String word:inputData) {
-            mapCount.merge(word,1,Integer::sum);
+
+    public static void wordCountUsingMerge() {
+        List<String> inputData = Arrays.asList("hi", "hi", "Hi", "hello");
+        Map<String, Integer> mapCount = new HashMap<>();
+        for (String word : inputData) {
+            mapCount.merge(word, 1, Integer::sum);
         }
         System.out.println(mapCount);
     }

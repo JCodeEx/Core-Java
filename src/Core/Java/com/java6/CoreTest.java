@@ -16,6 +16,5 @@ public class CoreTest {
         numberOfWords.numberOfWordsInAString(input);
         numberOfWords.java8Used();
 
-
     }
 }

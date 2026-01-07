@@ -3,10 +3,10 @@ package Core.Java.com.java8;
 public class Employee {
     public Employee(String name, int id, int age, double sal) {
 
-        this.name=name;
-        this.Id =id;
-        this.age=age;
-        this .sal=sal;
+        this.name = name;
+        this.Id = id;
+        this.age = age;
+        this.sal = sal;
     }
 
     public String getName() {

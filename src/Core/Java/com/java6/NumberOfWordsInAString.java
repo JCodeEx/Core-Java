@@ -15,14 +15,15 @@ public class NumberOfWordsInAString {
         if (input.isEmpty()) {
             System.out.println("Number of words: 0");
             return 0;
-        }else {
+        } else {
             String[] words = input.split("\\s+");
             System.out.println("Number of words: " + words.length);
             return words.length;
         }
 
     }
-    public void java8Used(){
+
+    public void java8Used() {
         // Using Java 8 Stream API
         String input = "  Hello   world! This is a   test string.  ";
         long wordCount = Arrays.stream(input.trim().split("\\s+"))
