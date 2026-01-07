@@ -2,7 +2,7 @@ package Core.Java.com.java8;
 
 import java.util.*;
 
-public class FindNumberPosition {
+public class FindFirstToNthPositionNumber {
     public static int findSecondHighestNumber(){
         List<Integer> numbers = Arrays.asList(900,200,400,600,300,900);
         int _2ndHighest= numbers.stream()
@@ -12,6 +12,8 @@ public class FindNumberPosition {
         return numbers.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
     }
     /*
+
+    It calculates how many unique (distinct) numbers are in the list.
     .sorted() → ascending → n-th smallest
     .sorted(reverseOrder()) → descending → n-th highest
 
@@ -22,10 +24,10 @@ public class FindNumberPosition {
 // Using ascending order correctly
    public static void nthHighestNumberAscendingOrder(int n){
        List<Integer> numbers = Arrays.asList(900,200,400,600,300,900);
-       int distinctSize = (int) numbers.stream().distinct().count();
+       int distinctNumber = (int) numbers.stream().distinct().count();
+       System.out.println("distinct applied ..."+distinctNumber);
     int nthHighest=numbers.stream()
-               .distinct().sorted()
-               .skip(distinctSize- n).findFirst()
+               .distinct().sorted().skip(distinctNumber- n).findFirst()
                .orElseThrow();
        System.out.println(nthHighest);
    }

@@ -37,7 +37,7 @@ Map<Boolean,List<Integer>> filterMap2=numberList.stream()
 
         Map<String, List<Integer>> map =
                 numberList.stream()
-                        .collect(Collectors.groupingBy(n -> n % 2 == 0 ? "Even" : "Odd"));
+                     .collect(Collectors.groupingBy(n -> n % 2 == 0 ? "Even" : "Odd"));
 
         System.out.println("From GroupBy and ternary operator  Even numbers: " + map.get("Even"));
         System.out.println("From GroupBy and ternary operator Odd numbers: " + map.get("Odd"));

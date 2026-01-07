@@ -7,17 +7,17 @@ public class MainTest {
 
        // System.out.println(" Words counts ...");
       //WordCountFromaGivenStringjava8.wordCountUsingStream(inputString);
-      //WordCountFromaGivenStringjava8.wordCountUsingMerge();
+    //  WordCountFromaGivenStringjava8.wordCountUsingMerge();
 
-       // System.out.println(" character counts ...");
-       // CharacterCounts.characterCountsWithMergeFunction(inputString);
-       // CharacterCounts.charCountUsingGroupingBy(inputString);
+       System.out.println(" character counts ...");
+      // CharacterCounts.characterCountsWithMergeFunction(inputString);
+        CharacterCounts.charCountUsingGroupingBy(inputString);
 
         System.out.println("find the number based on there position....");
-        FindNumberPosition.findSecondHighestNumber();
-        FindNumberPosition.nthHighestNumberAscendingOrder(1);
-        FindNumberPosition.nthHighestNumberUsingDescendingOrder(4);
-
+       // FindFirstToNthPositionNumber.findSecondHighestNumber();
+       // FindFirstToNthPositionNumber.nthHighestNumberAscendingOrder(1);
+       // FindFirstToNthPositionNumber.nthHighestNumberUsingDescendingOrder(2);
+        Find2ndHighestSalEmployee.findEmployeeDetails();
     }
 
 }
